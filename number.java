@@ -4,6 +4,7 @@ class number
 {
     public static void main(String args[])
     {
+        int count=0;
         Scanner sc=new Scanner(System.in);
         System.out.println("generate a random number");
         int my_num=sc.nextInt();
@@ -13,6 +14,7 @@ class number
         {
         if(choice==my_num)
         {
+            count++;
             System.out.println("you have guessed a right number");
         }
         else if(choice>my_num){
@@ -41,7 +43,8 @@ class number
             System.out.println("guessed number is out of range");
         }
     }
-    break;
+    break;           
 }
+        System.out.Println("no. of attempts are"+count);
 }
 }
